@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Word Replacer</h1>
+
+    <div class="input-group">
+        <label for="searchWord">Word to search:</label>
+        <input type="text" id="searchWord" placeholder="Enter the word you want to replace">
+    </div>
+
+    <div class="input-group">
+        <label for="replaceWord">Replace with:</label>
+        <input type="text" id="replaceWord" placeholder="Enter the replacement word">
+    </div>
+
+    <button id="replaceButton">Replace</button>
+    <button id="undoButton">Undo Last Change</button>
+    <button id="restoreButton">Restore Original</button>
+    <!-- <div id="replaceCount" class="counter"></div> -->
+
+    <h2>Main Text:</h2>
+    <div id="mainText" contenteditable="true">
+        This is some sample text where you can test the word replacement functionality.
+        Try searching for the word "sample" and replacing it with something else.
+        The word "sample" appears multiple times in this sample text.
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
